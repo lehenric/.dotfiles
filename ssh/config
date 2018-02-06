@@ -1,0 +1,40 @@
+Host 10.30.0.42
+	User root
+	HostName 10.30.0.42
+	IdentityFile "~/.ssh/16-5798-1"
+
+Host 1.1
+	HostName 10.30.1.1
+Host 4.212
+	HostName 192.168.4.212
+
+Host 1.1 4.212
+	User lehenric
+	IdentityFile "~/.ssh/16-5798-1"
+
+Host webdev
+	HostName webdev.fit.cvut.cz
+	
+Host home
+	Hostname 147.32.89.43
+
+Host home webdev
+	user lehenric
+	IdentityFile ~/.ssh/id_rsa
+
+Host progtest
+	Hostname 192.168.56.3
+	user progtest
+	IdentityFile ~/.ssh/id_rsa
+Host azure_db
+	Hostname 192.168.5.90
+	user root
+	IdentityFile ~/.ssh/id_rsa
+Host azure
+	Hostname 13.81.50.11
+	user azureuser
+	IdentityFile ~/.ssh/azure_oracle
+Host qa-desktop
+	Hostname 192.168.5.99
+	user root
+	IdentityFile ~/.ssh/16-5798-1
