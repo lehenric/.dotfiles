@@ -1,3 +1,8 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
 - clean: ['~']
 
 - link:
@@ -8,8 +13,13 @@
         create: true
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
+    ~/.oh-my-zsh: ~
     ~/.fonts/SourceCodePro+Powerline+Awesome+Regular.ttf: 
         path: fonts/SourceCodePro+Powerline+Awesome+Regular.ttf
         create: true
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+    - [fc-cache -f ~/.fonts, Rebuilding font cache]
 
 
