@@ -1,0 +1,86 @@
+[global_config]
+  always_split_with_profile = True
+  enabled_plugins = InactivityWatch, LaunchpadCodeURLHandler, MavenPluginURLHandler, LaunchpadBugURLHandler
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 6102508f-867d-4f50-9417-16e00e54e567
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 0:0
+      size = 1920, 1054
+      title = config (~/.config/terminator) - VIM
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 501
+      ratio = 0.47770398482
+      type = VPaned
+    [[[child2]]]
+      order = 0
+      parent = child1
+      position = 957
+      ratio = 0.499739583333
+      type = HPaned
+    [[[child5]]]
+      order = 1
+      parent = child1
+      position = 957
+      ratio = 0.499739583333
+      type = HPaned
+    [[[terminal3]]]
+      order = 0
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = 6102508f-867d-4f50-9417-16e00e54e567
+    [[[terminal4]]]
+      order = 1
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = b2ea9464-2db3-4f88-afa0-12fc8a631c17
+    [[[terminal6]]]
+      order = 0
+      parent = child5
+      profile = default
+      type = Terminal
+      uuid = c2f120b3-7ce7-42df-910f-3ca79cb250f6
+    [[[terminal7]]]
+      order = 1
+      parent = child5
+      profile = default
+      type = Terminal
+      uuid = 233266b7-763c-4b69-a37a-df4693709bc7
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#263238"
+    background_darkness = 0.93
+    background_image = None
+    background_type = transparent
+    cursor_color = "#58e0d3"
+    font = "SourceCodePro+Powerline+Awesome Regular, 13"
+    foreground_color = "#e6eaed"
+    palette = "#263238:#ec407a:#8bc34a:#ffa726:#2196f3:#9575cd:#00bcd4:#eceff1:#617d8a:#ec407a:#9ccc65:#ffb74d:#42a5f5:#b39ddb:#26c6da:#ffffff"
+    use_system_font = False
+  [[custom]]
+    background_color = "#263238"
+    background_darkness = 0.9
+    background_image = None
+    font = "SourceCodePro+Powerline+Awesome Regular, 13"
+    foreground_color = "#e6eaed"
+    login_shell = True
+    palette = "#263238:#ff5252:#9ccc65:#fee94e:#2b98f0:#b38bfc:#68b6f3:#eceff1:#617d8a:#fc625d:#9ccc65:#fee94e:#2b98f0:#b38bfc:#68b6f3:#ffffff"
+    use_system_font = False
+  [[default-mine]]
+    background_image = None
+    font = "SourceCodePro+Powerline+Awesome Regular, 12"
+    login_shell = True
+    palette = "#263238:#ec407a:#8bc34a:#ffa726:#2196f3:#9575cd :#00bcd4:#eceff1:#617d8a:#ec407a:#9ccc65:#ffb74d:#42a5f5:#b39ddb:#26c6da:#ffffff"
+    use_system_font = False
