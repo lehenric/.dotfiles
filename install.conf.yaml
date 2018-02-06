@@ -8,5 +8,8 @@
         create: true
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
+    ~/.fonts/SourceCodePro+Powerline+Awesome+Regular.ttf: 
+        path: fonts/SourceCodePro+Powerline+Awesome+Regular.ttf
+        create: true
 
 
