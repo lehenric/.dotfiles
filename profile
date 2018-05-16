@@ -29,3 +29,6 @@ export QT_AUTO_SCREEN_SCALE_FACTOR=true
 export QT_QPA_PLATFORMTHEME="qt5ct"
 unset QT_STYLE_OVERRIDE
 unset QT_DEVICE_PIXEL_RATIO
+#set java
+export JAVA_HOME=/usr/local/jdk1.8.0_162
+export PATH=$PATH:$JAVA_HOME/bin
