@@ -93,10 +93,13 @@ source $ZSH/oh-my-zsh.sh
   alias zshconfig="vim ~/.zshrc"
   alias hgrep="history | grep "
   alias gilg='git lg --all'
+  alias gdto='git difftool'
   alias umlet='umlet.sh & &>/dev/null'
   alias work='cd ~/work'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
   alias prettyjson='python -m json.tool'
+  alias lll='ls -A1'
+  alias pbcopy='xclip -sel clip'
 
   PATHaddons="\
 /home/lehenric/work/mongo/robomongo-0.9.0-rc4/bin:\
@@ -130,7 +133,28 @@ disk_usage(){
   du -h --max-depth=1 $1 | sort -h
 }
 
+bash_help(){
+	bash -c "help $1" | less
+}
+
+tryssh(){
+  until ssh "$1" 
+  do
+  :
+  done
+}
+
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 source ~/.fonts/*.sh
  source /home/lehenric/.config/powerlevel9k/themes/cvuorinen
+# change icon for VSCODE
+cp /usr/share/applications/code.desktop  ~/.local/share/applications/vscode.desktop
+sed -i "s/Icon=code/Icon=vscode/g" ~/.local/share/applications/vscode.desktop
+
+#docker-compose completition
+fpath=(~/.zsh/completion $fpath)
+autoload -Uz compinit && compinit -i
+
+#custom java 
+export JAVA_HOME=/usr/local/jdk1.8.0_162
