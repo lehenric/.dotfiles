@@ -1,5 +1,6 @@
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	addcw = -c interactive.diffFilter=\"git diff --color-words\" add -p
 [user]
 	email = henrich.le@plus4u.net
 	name = 16-5798-1
