@@ -1,4 +1,4 @@
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status dir dir_writable vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status root_indicator dir dir_writable vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=( background_jobs command_execution_time time battery ssh nvm node_version)
 
 POWERLEVEL9K_DIR_PATH_SEPARATOR=" $(print_icon "LEFT_SUBSEGMENT_SEPARATOR") "
