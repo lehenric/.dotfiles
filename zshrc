@@ -60,7 +60,7 @@ POWERLEVEL9K_MODE='awesome-patched'
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(zsh-autosuggestions colored-man colorize tmux git sudo)
+plugins=(zsh-autosuggestions colored-man-pages colorize tmux git sudo)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -103,14 +103,12 @@ source $ZSH/oh-my-zsh.sh
 
   PATHaddons="\
 /home/lehenric/work/mongo/robomongo-0.9.0-rc4/bin:\
-/home/lehenric/jruby/jruby-1.7.21/bin/:\
 /home/lehenric/eclipse/:\
 /home/lehenric/school/uml/Umlet/:\
 /opt/clion-2017.1.2/bin/:\
 /home/lehenric/bin/:\
-//home/lehenric/work/ruby/2.2.7/bin:\
 /home/lehenric/work/maven/apache-maven-3.5.0/bin:\
-/home/lehenric/work/robo3t/robo3t-1.1.1-linux-x86_64-c93c6b0/bin\
+/home/lehenric/work/robo3t/robo3t-1.2.1-linux-x86_64-3e50a65/bin\
 "
   export PATH=$PATH:$PATHaddons
   source /home/lehenric/git/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
