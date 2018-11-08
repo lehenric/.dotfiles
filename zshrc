@@ -7,10 +7,11 @@
  export TERM="xterm-256color"
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
-POWERLEVEL9K_MODE='awesome-patched'
+#POWERLEVEL9K_MODE='awesome-patched'
+POWERLEVEL9K_MODE='nerdfont-complete'
 
 #source /home/lehenric/.config/powerlevel9k/themes/simple
- source /home/lehenric/.config/powerlevel9k/themes/cvuorinen 2>/dev/null
+source /home/lehenric/.config/powerlevel9k/themes/cvuorinen 2>/dev/null
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -60,7 +61,7 @@ POWERLEVEL9K_MODE='awesome-patched'
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(zsh-autosuggestions colored-man-pages colorize tmux git sudo)
+plugins=(zsh-autosuggestions colored-man-pages colorize tmux git sudo ruby )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -108,7 +109,9 @@ source $ZSH/oh-my-zsh.sh
 /opt/clion-2017.1.2/bin/:\
 /home/lehenric/bin/:\
 /home/lehenric/work/maven/apache-maven-3.5.0/bin:\
-/home/lehenric/work/robo3t/robo3t-1.2.1-linux-x86_64-3e50a65/bin\
+/home/lehenric/work/robo3t/robo3t-1.2.1-linux-x86_64-3e50a65/bin:\
+/usr/local/jdk1.8.0_181/bin:\
+/home/lehenric/work/nodejs/node-v10.11.0-linux-x64/bin\
 "
   export PATH=$PATH:$PATHaddons
   source /home/lehenric/git/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -119,7 +122,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Conf less to work on directories
 # must have .lessfilter in home dir
-  eval "$(lesspipe)"
+cat /etc/*release | grep -i fedora 2>&1 >/dev/null || eval "$(lesspipe)"
 
 #export PATH=$PATH:/home/lehenric/bin
 
@@ -128,7 +131,7 @@ source '/home/lehenric/work/azure/azure-cli/az.completion'
 
 # disk_usage function
 disk_usage(){
-  du -h --max-depth=1 $1 | sort -h
+  du -hx --max-depth=1 $1 | sort -h
 }
 
 bash_help(){
@@ -142,17 +145,18 @@ tryssh(){
   done
 }
 
+#docker-compose completition
+fpath=(~/.zsh/completion $fpath)
+ autoload -Uz compinit && compinit -i
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
 source ~/.fonts/*.sh
  source /home/lehenric/.config/powerlevel9k/themes/cvuorinen
 # change icon for VSCODE
 cp /usr/share/applications/code.desktop  ~/.local/share/applications/vscode.desktop
 sed -i "s/Icon=code/Icon=vscode/g" ~/.local/share/applications/vscode.desktop
 
-#docker-compose completition
-fpath=(~/.zsh/completion $fpath)
-autoload -Uz compinit && compinit -i
 
 #custom java 
-export JAVA_HOME=/usr/local/jdk1.8.0_162
+export JAVA_HOME=/usr/local/jdk1.8.0_181

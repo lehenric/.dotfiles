@@ -38,3 +38,10 @@ Host qa-desktop
 	Hostname 192.168.5.99
 	user root
 	IdentityFile ~/.ssh/16-5798-1
+Host uurepo
+	Hostname uurepo.westeurope.cloudapp.azure.com
+	User uuadmin
+	IdentityFile ~/.ssh/16-5798-1
+Host uuswarm
+	Hostname uuswarm.westeurope.cloudapp.azure.com
+	User uuadmin
