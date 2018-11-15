@@ -19,6 +19,7 @@
         create: true
     ~/.config/powerlevel9k/themes: config/powerlevel9k/themes
     ~/.config/terminator : config/terminator
+    ~/.config/libinput-gestures.conf: config/libinput-gestures.conf
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     - [fc-cache -f ~/.fonts, Rebuilding font cache]
