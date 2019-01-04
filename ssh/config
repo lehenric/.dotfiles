@@ -40,6 +40,8 @@ Host qa-desktop
 	IdentityFile ~/.ssh/16-5798-1
 Host uurepo.westeurope.cloudapp.azure.com
 	IdentityFile ~/.ssh/16-5798-1
+Host codebase.plus4u.net
+	IdentityFile ~/.ssh/16-5798-1
 Host uurepo
 	Hostname uurepo.westeurope.cloudapp.azure.com
 	User uuadmin
