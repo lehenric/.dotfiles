@@ -1,7 +1,10 @@
 [global_config]
   always_split_with_profile = True
   enabled_plugins = InactivityWatch, LaunchpadCodeURLHandler, MavenPluginURLHandler, LaunchpadBugURLHandler
-  title_transmit_bg_color = "#3465a4"
+  inactive_color_offset = 0.475609756098
+  scroll_tabbar = True
+  title_inactive_bg_color = "#3d5059"
+  title_transmit_bg_color = "#222d32"
 [keybindings]
 [layouts]
   [[default]]
@@ -37,25 +40,31 @@
 [plugins]
 [profiles]
   [[default]]
-    background_color = "#263238"
+    background_color = "#002b36"
     background_darkness = 0.95
-    background_type = transparent
     cursor_color = "#58e0d3"
+    cursor_shape = underline
     custom_command = zsh --login
-    font = "SourceCodePro+Powerline+Awesome Regular, 13"
-    foreground_color = "#e6eaed"
-    palette = "#263238:#ec407a:#8bc34a:#ffa726:#2196f3:#9575cd:#00bcd4:#eceff1:#617d8a:#ec407a:#9ccc65:#ffb74d:#42a5f5:#b39ddb:#26c6da:#ffffff"
+    font = "SourceCodePro+Powerline+Awesome Regular, 12"
+    foreground_color = "#839496"
+    palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
+    scrollback_infinite = True
     use_custom_command = True
     use_system_font = False
   [[custom]]
-    background_color = "#263238"
+    background_color = "#222d32"
     background_darkness = 0.9
+    cursor_color = "#e6eaed"
+    cursor_shape = ibeam
     font = "SourceCodePro+Powerline+Awesome Regular, 13"
     foreground_color = "#e6eaed"
     login_shell = True
-    palette = "#263238:#ff5252:#9ccc65:#fee94e:#2b98f0:#b38bfc:#68b6f3:#eceff1:#617d8a:#fc625d:#9ccc65:#fee94e:#2b98f0:#b38bfc:#68b6f3:#ffffff"
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    scrollback_lines = 1500
     use_system_font = False
+    use_theme_colors = True
   [[default-mine]]
+    cursor_color = "#aaaaaa"
     font = "SourceCodePro+Powerline+Awesome Regular, 12"
     login_shell = True
     palette = "#263238:#ec407a:#8bc34a:#ffa726:#2196f3:#9575cd :#00bcd4:#eceff1:#617d8a:#ec407a:#9ccc65:#ffb74d:#42a5f5:#b39ddb:#26c6da:#ffffff"
