@@ -6,12 +6,14 @@
 # Export
  export TERM="xterm-256color"
 ZSH_THEME="powerlevel9k/powerlevel9k"
+#ZSH_THEME="gnzh"
 
 #POWERLEVEL9K_MODE='awesome-patched'
-POWERLEVEL9K_MODE='nerdfont-complete'
+#POWERLEVEL9K_MODE='nerdfont-complete'
 
 #source /home/lehenric/.config/powerlevel9k/themes/simple
-source /home/lehenric/.config/powerlevel9k/themes/cvuorinen 2>/dev/null
+ source /home/lehenric/.config/powerlevel9k/themes/mavam
+#source /home/lehenric/.config/powerlevel9k/themes/cvuorinen 2>/dev/null
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
