@@ -154,8 +154,8 @@ export PATH="$PATH:$HOME/.rvm/bin"
 source ~/.fonts/*.sh
  source /home/lehenric/.config/powerlevel9k/themes/cvuorinen
 # change icon for VSCODE
-cp /usr/share/applications/code.desktop  ~/.local/share/applications/vscode.desktop
-sed -i "s/Icon=code/Icon=vscode/g" ~/.local/share/applications/vscode.desktop
+#cp /usr/share/applications/code.desktop  ~/.local/share/applications/vscode.desktop
+#sed -i "s/Icon=code/Icon=vscode/g" ~/.local/share/applications/vscode.desktop
 
 
 #custom java 
