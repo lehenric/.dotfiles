@@ -10,7 +10,7 @@
   [[default]]
     [[[child0]]]
       fullscreen = False
-      last_active_term = 546af340-d1d7-4eb6-98ba-4add5608a7fe
+      last_active_term = 67c9f648-9cd4-42ac-8e89-dc2fa41cd3b7
       last_active_window = True
       maximised = False
       order = 0
@@ -19,21 +19,9 @@
       size = 815, 570
       title = lehenric@lehenric-ThinkPad-L450: ~
       type = Window
-    [[[child1]]]
+    [[[terminal1]]]
       order = 0
       parent = child0
-      position = 405
-      ratio = 0.5
-      type = HPaned
-    [[[terminal2]]]
-      order = 0
-      parent = child1
-      profile = default
-      type = Terminal
-      uuid = 546af340-d1d7-4eb6-98ba-4add5608a7fe
-    [[[terminal3]]]
-      order = 1
-      parent = child1
       profile = default
       type = Terminal
       uuid = 67c9f648-9cd4-42ac-8e89-dc2fa41cd3b7
@@ -45,7 +33,7 @@
     cursor_color = "#58e0d3"
     cursor_shape = ibeam
     custom_command = zsh --login
-    font = "SourceCodePro+Powerline+Awesome Regular, 12"
+    font = MesloLGM Nerd Font 13
     foreground_color = "#839496"
     palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
     scrollback_infinite = True
