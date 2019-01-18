@@ -49,3 +49,6 @@ Host uurepo
 Host uuswarm
 	Hostname uuswarm.westeurope.cloudapp.azure.com
 	User uuadmin
+Host uujenkins
+	Hostname uujenkins.westeurope.cloudapp.azure.com
+	User uuadmin
