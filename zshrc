@@ -125,7 +125,6 @@ source $ZSH/oh-my-zsh.sh
 /home/lehenric/work/nodejs/node-v10.11.0-linux-x64/bin\
 "
   export PATH=$PATH:$PATHaddons
-  source /home/lehenric/git/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Set default VISUAL TEXT EDITOR
 
