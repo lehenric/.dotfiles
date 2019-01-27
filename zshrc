@@ -140,7 +140,7 @@ cat /etc/*release | grep -i fedora 2>&1 >/dev/null || eval "$(lesspipe)"
 
 #export PATH=$PATH:/home/lehenric/bin
 
-autoload bashcompinit && bashcompinit
+autoload -U +X bashcompinit && bashcompinit
 source '/home/lehenric/work/azure/azure-cli/az.completion'
 
 # disk_usage function
@@ -161,7 +161,7 @@ tryssh(){
 
 #docker-compose completition
 fpath=(~/.zsh/completion $fpath)
- autoload -Uz compinit && compinit -i
+#autoload -Uz compinit && compinit -i
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
