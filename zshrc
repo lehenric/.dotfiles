@@ -5,21 +5,12 @@
  export ZSH=/home/lehenric/.oh-my-zsh
 # Export
  export TERM="xterm-256color"
-ZSH_THEME="powerlevel9k/powerlevel9k"
-#ZSH_THEME="gnzh"
-
-#POWERLEVEL9K_MODE='awesome-patched'
-#POWERLEVEL9K_MODE='nerdfont-complete'
-
-#source /home/lehenric/.config/powerlevel9k/themes/simple
- source /home/lehenric/.config/powerlevel9k/themes/mavam
-#source /home/lehenric/.config/powerlevel9k/themes/cvuorinen 2>/dev/null
+source /home/lehenric/.config/powerlevel9k/themes/mavam
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# ZSH_THEME="powerlevel9k/powerlevel9k"
-# ZSH_THEME="amuse"
+ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -32,7 +23,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
+export UPDATE_ZSH_DAYS=13
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -44,7 +35,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -94,8 +85,7 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch x86_64"
 
 # Set default VISUAL TEXT EDITOR
-
-  export VISUAL=vim
+export VISUAL=vim
 
 # Conf less to work on directories
 # must have .lessfilter in home dir
@@ -114,14 +104,10 @@ done
 
 #docker-compose completition
 fpath=(~/.zsh/completion $fpath)
-#autoload -Uz compinit && compinit -i
+
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
-# change icon for VSCODE
-#cp /usr/share/applications/code.desktop  ~/.local/share/applications/vscode.desktop
-#sed -i "s/Icon=code/Icon=vscode/g" ~/.local/share/applications/vscode.desktop
-
 
 #custom java 
 export JAVA_HOME=/usr/local/jdk1.8.0_181
