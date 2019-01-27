@@ -113,18 +113,22 @@ source $ZSH/oh-my-zsh.sh
   alias lll='ls -A1'
   alias pbcopy='xclip -sel clip'
 
-  PATHaddons="\
-/home/lehenric/work/mongo/robomongo-0.9.0-rc4/bin:\
-/home/lehenric/eclipse/:\
-/home/lehenric/school/uml/Umlet/:\
-/opt/clion-2017.1.2/bin/:\
-/home/lehenric/bin/:\
-/home/lehenric/work/maven/apache-maven-3.5.0/bin:\
-/home/lehenric/work/robo3t/robo3t-1.2.1-linux-x86_64-3e50a65/bin:\
-/usr/local/jdk1.8.0_181/bin:\
-/home/lehenric/work/nodejs/node-v10.11.0-linux-x64/bin\
-"
-  export PATH=$PATH:$PATHaddons
+  PATHaddons=(
+    "/home/lehenric/work/mongo/robomongo-0.9.0-rc4/bin"
+    "/home/lehenric/eclipse/"
+    "/home/lehenric/school/uml/Umlet/"
+    "/opt/clion-2017.1.2/bin/"
+    "/home/lehenric/bin/"
+    "/home/lehenric/work/maven/apache-maven-3.5.0/bin"
+    "/home/lehenric/work/robo3t/robo3t-1.2.1-linux-x86_64-3e50a65/bin"
+    "/usr/local/jdk1.8.0_181/bin"
+    "/home/lehenric/work/nodejs/node-v10.11.0-linux-x64/bin"
+  )
+  for pathAddon in ${PATHaddons[@]}
+  do
+    PATH="$PATH:$pathAddon"
+  done
+  export PATH
 
 # Set default VISUAL TEXT EDITOR
 
