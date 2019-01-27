@@ -93,43 +93,6 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-  alias zshconfig="vim ~/.zshrc"
-  alias hgrep="history | grep "
-  alias gilg='git lg --all'
-  alias gdto='git difftool'
-  alias umlet='umlet.sh & &>/dev/null'
-  alias work='cd ~/work'
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-  alias prettyjson='python -m json.tool'
-  alias lll='ls -A1'
-  alias pbcopy='xclip -sel clip'
-
-  PATHaddons=(
-    "/home/lehenric/work/mongo/robomongo-0.9.0-rc4/bin"
-    "/home/lehenric/eclipse/"
-    "/home/lehenric/school/uml/Umlet/"
-    "/opt/clion-2017.1.2/bin/"
-    "/home/lehenric/bin/"
-    "/home/lehenric/work/maven/apache-maven-3.5.0/bin"
-    "/home/lehenric/work/robo3t/robo3t-1.2.1-linux-x86_64-3e50a65/bin"
-    "/usr/local/jdk1.8.0_181/bin"
-    "/home/lehenric/work/nodejs/node-v10.11.0-linux-x64/bin"
-  )
-  for pathAddon in ${PATHaddons[@]}
-  do
-    PATH="$PATH:$pathAddon"
-  done
-  export PATH
-
 # Set default VISUAL TEXT EDITOR
 
   export VISUAL=vim
@@ -143,21 +106,11 @@ cat /etc/*release | grep -i fedora 2>&1 >/dev/null || eval "$(lesspipe)"
 autoload -U +X bashcompinit && bashcompinit
 source '/home/lehenric/work/azure/azure-cli/az.completion'
 
-# disk_usage function
-disk_usage(){
-  du -hx --max-depth=1 $1 | sort -h
-}
-
-bash_help(){
-	bash -c "help $1" | less
-}
-
-tryssh(){
-  until ssh "$1" 
-  do
-  :
-  done
-}
+# source configurations in ~/.zshrc.d 
+for configuration in `ls ~/.zshrc.d/*.conf`
+do
+  source $configuration
+done
 
 #docker-compose completition
 fpath=(~/.zsh/completion $fpath)
