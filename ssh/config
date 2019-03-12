@@ -52,3 +52,6 @@ Host uuswarm
 Host uujenkins
 	Hostname uujenkins.westeurope.cloudapp.azure.com
 	User uuadmin
+Host star
+	Hostname star.fit.cvut.cz
+	User lehenric
