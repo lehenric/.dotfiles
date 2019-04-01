@@ -1,0 +1,2 @@
+#!/bin/sh -e
+wmctrl -a tilix || tilix
