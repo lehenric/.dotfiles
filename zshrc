@@ -106,7 +106,6 @@ PATHaddons=(
   "/home/lehenric/work/mongo/robomongo-0.9.0-rc4/bin"
   "/home/lehenric/eclipse/"
   "/home/lehenric/school/uml/Umlet/"
-  "/opt/clion-2017.1.2/bin/"
   "/home/lehenric/bin/"
   "/home/lehenric/work/maven/apache-maven-3.5.0/bin"
   "/home/lehenric/work/robo3t/robo3t-1.2.1-linux-x86_64-3e50a65/bin"
@@ -114,10 +113,13 @@ PATHaddons=(
   "/home/lehenric/work/nodejs/node-v10.11.0-linux-x64/bin"
   /home/lehenric/apps/cmake-3.13.4-Linux-x86_64/bin
   ~/work/bin
+  $HOME/.yarn/bin
+  $HOME/.config/yarn/global/node_modules/.bin
+  $HOME/work/gradle/gradle-5.4.1/bin
 )
 for pathAddon in ${PATHaddons[@]}
 do
-  PATH="$PATH:$pathAddon"
+  PATH="$pathAddon:$PATH"
 done
 export PATH
 
@@ -129,4 +131,5 @@ export PATH="$PATH:$HOME/.rvm/bin"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
 
 #custom java 
-export JAVA_HOME=/usr/local/jdk1.8.0_181
+#export JAVA_HOME=/usr/local/jdk1.8.0_181
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk
