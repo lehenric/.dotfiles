@@ -22,7 +22,9 @@ if dein#load_state('~/.local/share/dein')
    call dein#add('bling/vim-bufferline')
    call dein#add('scrooloose/nerdtree')
    call dein#add('Xuyuanp/nerdtree-git-plugin')
+   call dein#add('sheerun/vim-polyglot')
    call dein#add('junegunn/fzf.vim')
+   call dein#add('plasticboy/vim-markdown')
    call dein#add('neoclide/coc.nvim', { 'merger':0, 'rev': 'release' })
   " Required:
   call dein#end()
@@ -86,6 +88,15 @@ set number
 
 " search visual
 vnoremap // y/<C-R>"<CR>
+
+" FOLDING
+" js folding
+augroup javascript_folding
+    au!
+    au FileType javascript setlocal foldmethod=syntax
+augroup END
+set foldlevelstart=2
+
 "" Macros
 
 let mapleader=","
