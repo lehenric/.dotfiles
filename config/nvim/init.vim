@@ -125,3 +125,6 @@ nmap <leader>{ Bi{<ESC>Ea}<ESC>
 "" convert md to pdf from actual file and open it using xdg-open
 nnoremap <leader>mdpdf :exec  "! mdpdf " . expand('%:p') . " && xdg-open " . expand('%:p:r') . ".pdf"<CR>
 
+"" prettyfi json
+nnoremap <leader>jq :%!python -m json.tool<CR>
+
