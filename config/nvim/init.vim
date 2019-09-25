@@ -105,6 +105,9 @@ nmap <leader>h :noh<CR>
 nmap <leader>n :set number!<CR>
 nmap <leader>l :set list!<CR>
 
+" registers
+noremap <leader>r :reg<CR>
+
 " fzf
 nnoremap <leader>fi :Files<CR>
 nnoremap <Leader>bu :Buffers<CR>
