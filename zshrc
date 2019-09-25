@@ -116,6 +116,7 @@ PATHaddons=(
   $HOME/.yarn/bin
   $HOME/.config/yarn/global/node_modules/.bin
   $HOME/work/gradle/gradle-5.4.1/bin
+  $HOME/go/bin
 )
 for pathAddon in ${PATHaddons[@]}
 do
