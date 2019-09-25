@@ -128,3 +128,9 @@ nnoremap <leader>mdpdf :exec  "! mdpdf " . expand('%:p') . " && xdg-open " . exp
 "" prettyfi json
 nnoremap <leader>jq :%!python -m json.tool<CR>
 
+" excape terminal with esc
+tnoremap <Esc> <C-\><C-n>
+
+" terminal to zsh
+set sh=/usr/bin/zsh
+
