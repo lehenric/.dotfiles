@@ -134,3 +134,9 @@ tnoremap <Esc> <C-\><C-n>
 " terminal to zsh
 set sh=/usr/bin/zsh
 
+" spaces instead of tabs for indent
+set tabstop     =4
+set softtabstop =4
+set shiftwidth  =4
+set expandtab
+
