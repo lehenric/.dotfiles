@@ -21,6 +21,7 @@ if dein#load_state('~/.local/share/dein')
    call dein#add('bling/vim-bufferline')
    call dein#add('scrooloose/nerdtree')
    call dein#add('Xuyuanp/nerdtree-git-plugin')
+   call dein#add('junegunn/fzf.vim')
    call dein#add('neoclide/coc.nvim', { 'merger':0, 'rev': 'release' })
   " Required:
   call dein#end()
@@ -85,6 +86,12 @@ nmap <leader>n :set number!<CR>
 nmap <leader>l :set list!<CR>
 noremap <leader>d :sp<CR>
 noremap <leader>r :vsp<CR>
+
+" fzf
+nnoremap <leader>fi :Files<CR>
+nnoremap <Leader>bu :Buffers<CR>
+nnoremap <Leader>hi :History<CR>
+
 nmap <leader>x Bx<ESC>Ex<ESC>
 nmap <leader>` Bi`<ESC>Ea`<ESC>
 nmap <leader>" Bi"<ESC>Ea"<ESC>
