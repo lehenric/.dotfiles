@@ -90,8 +90,6 @@ nmap <leader>q :NERDTreeToggle<CR>
 nmap <leader>h :noh<CR>
 nmap <leader>n :set number!<CR>
 nmap <leader>l :set list!<CR>
-noremap <leader>d :sp<CR>
-noremap <leader>r :vsp<CR>
 
 " fzf
 nnoremap <leader>fi :Files<CR>
