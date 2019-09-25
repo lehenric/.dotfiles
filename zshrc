@@ -63,6 +63,8 @@ plugins=(
   sudo
   zsh-syntax-highlighting
   alias-tips
+  docker
+  fd
 )
 
 source $ZSH/oh-my-zsh.sh
