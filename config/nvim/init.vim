@@ -54,14 +54,19 @@ let g:NERDTreeIndicatorMapCustom = {
 
 
 " Airline
-"let g:airline_powerline_fonts = 3
+ let g:airline_theme = "solarized"
+ let g:airline_solarized_bg='dark'
+ let g:airline_powerline_fonts = 1
 " testing rounded separators (extra-powerline-symbols):
 let g:airline_left_sep = "\uE0B4"
 let g:airline#extensions#tabline#left_sep = "\uE0B4"
 let g:airline_right_sep = "\uE0B6"
+ let g:airline#extensions#tabline#right_sep = "\uE0B6"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_detect_modified=1
 let g:airline_detect_paste=1
+ let g:airline#extensions#branch#enabled = 1
+ let g:airline_section_c = airline#section#create(['%t'])
 
 cmap w!! w !sudo tee > /dev/null %
 
