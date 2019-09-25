@@ -119,7 +119,7 @@ PATHaddons=(
 )
 for pathAddon in ${PATHaddons[@]}
 do
-  PATH="$pathAddon:$PATH"
+  PATH="$PATH:$pathAddon"
 done
 export PATH
 
