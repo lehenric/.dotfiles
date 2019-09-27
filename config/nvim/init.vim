@@ -148,3 +148,7 @@ nnoremap <leader>c :!ctags %<CR>
 
 " reverse vim history search
 nnoremap <leader>R q:?
+
+" insert newline
+nnoremap <leader>o o<ESC>
+nnoremap <leader>O O<ESC>
