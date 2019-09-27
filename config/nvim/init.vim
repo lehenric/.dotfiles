@@ -145,3 +145,6 @@ set expandtab
 
 " generate ctags
 nnoremap <leader>c :!ctags %<CR>
+
+" reverse vim history search
+nnoremap <leader>R q:?
