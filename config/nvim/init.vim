@@ -28,6 +28,7 @@ if dein#load_state('~/.local/share/dein')
    call dein#add('junegunn/fzf.vim')
    call dein#add('plasticboy/vim-markdown')
    call dein#add('neoclide/coc.nvim', { 'merger':0, 'rev': 'release' })
+   call dein#add('universal-ctags/ctags')
   " Required:
   call dein#end()
   call dein#save_state()
@@ -142,3 +143,5 @@ set softtabstop =4
 set shiftwidth  =4
 set expandtab
 
+" generate ctags
+nnoremap <leader>c :!ctags %<CR>
