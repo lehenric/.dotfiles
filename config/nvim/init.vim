@@ -152,10 +152,3 @@ nnoremap <leader>R q:?
 " insert newline
 nnoremap <leader>o o<ESC>
 nnoremap <leader>O O<ESC>
-
-" remap tab to esc
-nnoremap <Tab> <Esc>
-vnoremap <Tab> <Esc>gV
-onoremap <Tab> <Esc>
-inoremap <Tab> <Esc>`^
-inoremap <Leader><Tab> <Tab>
