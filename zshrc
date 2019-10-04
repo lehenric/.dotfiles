@@ -10,7 +10,8 @@ source /home/lehenric/.config/powerlevel9k/themes/mavam
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="powerlevel9k/powerlevel9k"
+#ZSH_THEME="powerlevel9k/powerlevel9k"
+ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -137,3 +138,6 @@ export PATH="$PATH:$HOME/.rvm/bin"
 #custom java 
 #export JAVA_HOME=/usr/local/jdk1.8.0_181
 export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+ [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
