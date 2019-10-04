@@ -152,3 +152,6 @@ nnoremap <leader>R q:?
 " insert newline
 nnoremap <leader>o o<ESC>
 nnoremap <leader>O O<ESC>
+
+" colorscheme
+colorscheme ron
