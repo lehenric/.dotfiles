@@ -97,7 +97,7 @@ cat /etc/*release | grep -i fedora 2>&1 >/dev/null || eval "$(lesspipe)"
 #export PATH=$PATH:~/bin
 
 autoload -U +X bashcompinit && bashcompinit
-source '~/work/azure/azure-cli/az.completion'
+source ~/work/azure/azure-cli/az.completion
 
 # source configurations in ~/.zshrc.d 
 for configuration in `ls ~/.zshrc.d/*.conf`
@@ -106,14 +106,14 @@ do
 done
 
 PATHaddons=(
-  "~/work/mongo/robomongo-0.9.0-rc4/bin"
-  "~/eclipse/"
-  "~/school/uml/Umlet/"
-  "~/bin/"
-  "~/work/maven/apache-maven-3.5.0/bin"
-  "~/work/robo3t/robo3t-1.2.1-linux-x86_64-3e50a65/bin"
-  "/usr/local/jdk1.8.0_181/bin"
-  "~/work/nodejs/node-v10.11.0-linux-x64/bin"
+  ~/work/mongo/robomongo-0.9.0-rc4/bin
+  ~/eclipse/
+  ~/school/uml/Umlet/
+  ~/bin/
+  ~/work/maven/apache-maven-3.5.0/bin
+  ~/work/robo3t/robo3t-1.2.1-linux-x86_64-3e50a65/bin
+  /usr/local/jdk1.8.0_181/bin
+  ~/work/nodejs/node-v10.11.0-linux-x64/bin
   ~/apps/cmake-3.13.4-Linux-x86_64/bin
   ~/work/bin
   $HOME/.yarn/bin
