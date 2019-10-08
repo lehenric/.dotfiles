@@ -122,13 +122,6 @@ nnoremap <Leader>bu :Buffers<CR>
 nnoremap <Leader>hi :History<CR>
 
 nmap <leader>x Bx<ESC>Ex<ESC>
-nmap <leader>` Bi`<ESC>Ea`<ESC>
-nmap <leader>" Bi"<ESC>Ea"<ESC>
-nmap <leader>' Bi'<ESC>Ea'<ESC>
-nmap <leader>* Bi*<ESC>Ea*<ESC>
-nmap <leader>( Bi(<ESC>Ea)<ESC>
-nmap <leader>[ Bi[<ESC>Ea]<ESC>
-nmap <leader>{ Bi{<ESC>Ea}<ESC>
 
 "" convert md to pdf from actual file and open it using xdg-open
 nnoremap <leader>md :exec  "! pandoc -o " . expand('%:p:r') . ".html " . expand('%:p') . " && firefox " . expand('%:p:r') . ".html"<CR>
