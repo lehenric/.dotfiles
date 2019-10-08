@@ -110,6 +110,7 @@ let mapleader=","
 nmap <leader>q :NERDTreeToggle<CR>
 nmap <leader>h :noh<CR>
 nmap <leader>n :set number!<CR>
+nmap <leader>nrl :set relativenumber!<CR>
 nmap <leader>l :set list!<CR>
 
 " registers
