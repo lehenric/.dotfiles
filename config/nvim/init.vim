@@ -22,6 +22,7 @@ if dein#load_state('~/.local/share/dein')
    call dein#add('bling/vim-bufferline')
    call dein#add('scrooloose/nerdtree')
    call dein#add('Xuyuanp/nerdtree-git-plugin')
+   " icons
    call dein#add('ryanoasis/vim-devicons')
    call dein#add('tpope/vim-surround')
    call dein#add('sheerun/vim-polyglot')
@@ -75,6 +76,7 @@ let g:NERDTreeIndicatorMapCustom = {
  let g:airline#extensions#branch#enabled = 1
  let g:airline_section_c = airline#section#create(['%t'])
 
+" sudo write
 cmap w!! w !sudo tee > /dev/null %
 
  autocmd BufReadPost *
@@ -83,6 +85,7 @@ cmap w!! w !sudo tee > /dev/null %
    \ endif
 
 "autocmd BufReadPost * if @% !~# '\.git[\/\\]COMMIT_EDITMSG$' && line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif 
+
 " natural spliting
 set splitbelow
 set splitright
