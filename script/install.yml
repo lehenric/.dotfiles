@@ -30,9 +30,10 @@
   - name: install dein plugin manager
     shell: |
       curl -fsSL https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh -o /tmp/dein-installer.sh
-      /tmp/dein-installer.sh ~/.local/share/dein 
+      sh /tmp/dein-installer.sh ~/.local/share/dein 
       rm /tmp/dein-installer.sh
     args:
+      warn: false
       creates: ~/.local/share/dein
 
   - name: call rcup
