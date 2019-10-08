@@ -2,10 +2,10 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
- export ZSH=/home/lehenric/.oh-my-zsh
+ export ZSH=~/.oh-my-zsh
 # Export
  export TERM="xterm-256color"
-source /home/lehenric/.config/powerlevel9k/themes/mavam
+source ~/.config/powerlevel9k/themes/mavam
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -94,10 +94,10 @@ export VISUAL=vim
 # must have .lessfilter in home dir
 cat /etc/*release | grep -i fedora 2>&1 >/dev/null || eval "$(lesspipe)"
 
-#export PATH=$PATH:/home/lehenric/bin
+#export PATH=$PATH:~/bin
 
 autoload -U +X bashcompinit && bashcompinit
-source '/home/lehenric/work/azure/azure-cli/az.completion'
+source '~/work/azure/azure-cli/az.completion'
 
 # source configurations in ~/.zshrc.d 
 for configuration in `ls ~/.zshrc.d/*.conf`
@@ -106,15 +106,15 @@ do
 done
 
 PATHaddons=(
-  "/home/lehenric/work/mongo/robomongo-0.9.0-rc4/bin"
-  "/home/lehenric/eclipse/"
-  "/home/lehenric/school/uml/Umlet/"
-  "/home/lehenric/bin/"
-  "/home/lehenric/work/maven/apache-maven-3.5.0/bin"
-  "/home/lehenric/work/robo3t/robo3t-1.2.1-linux-x86_64-3e50a65/bin"
+  "~/work/mongo/robomongo-0.9.0-rc4/bin"
+  "~/eclipse/"
+  "~/school/uml/Umlet/"
+  "~/bin/"
+  "~/work/maven/apache-maven-3.5.0/bin"
+  "~/work/robo3t/robo3t-1.2.1-linux-x86_64-3e50a65/bin"
   "/usr/local/jdk1.8.0_181/bin"
-  "/home/lehenric/work/nodejs/node-v10.11.0-linux-x64/bin"
-  /home/lehenric/apps/cmake-3.13.4-Linux-x86_64/bin
+  "~/work/nodejs/node-v10.11.0-linux-x64/bin"
+  ~/apps/cmake-3.13.4-Linux-x86_64/bin
   ~/work/bin
   $HOME/.yarn/bin
   $HOME/.config/yarn/global/node_modules/.bin
