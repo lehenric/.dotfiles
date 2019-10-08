@@ -29,6 +29,7 @@ if dein#load_state('~/.local/share/dein')
    call dein#add('plasticboy/vim-markdown')
    call dein#add('neoclide/coc.nvim', { 'merger':0, 'rev': 'release' })
    call dein#add('universal-ctags/ctags')
+   call dein#add('arcticicestudio/nord-vim')
   " Required:
   call dein#end()
   call dein#save_state()
@@ -60,8 +61,8 @@ let g:NERDTreeIndicatorMapCustom = {
 
 
 " Airline
- let g:airline_theme = "solarized"
- let g:airline_solarized_bg='dark'
+"let g:airline_theme = "solarized"
+"let g:airline_solarized_bg='dark'
  let g:airline_powerline_fonts = 1
 " testing rounded separators (extra-powerline-symbols):
  let g:airline_left_sep = "\uE0B4"
@@ -154,4 +155,10 @@ nnoremap <leader>o o<ESC>
 nnoremap <leader>O O<ESC>
 
 " colorscheme
-colorscheme ron
+" colorscheme ron
+
+" Nord theme
+let g:nord_cursor_line_number_background = 1
+colorscheme nord
+"let g:airline_theme = 'rigel'
+
