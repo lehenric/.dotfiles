@@ -25,10 +25,9 @@ fi
 export PATH="$PATH:$HOME/.rvm/bin"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-export QT_AUTO_SCREEN_SCALE_FACTOR=true
-export QT_QPA_PLATFORMTHEME="qt5ct"
-unset QT_STYLE_OVERRIDE
-unset QT_DEVICE_PIXEL_RATIO
+export QT_AUTO_SCREEN_SCALE_FACTOR=0
+export QT_SCALE_FACTOR=1
+
 #set java
 export JAVA_HOME=/usr/local/jdk1.8.0_162
 export PATH=$PATH:$JAVA_HOME/bin
