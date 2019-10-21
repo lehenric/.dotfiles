@@ -91,7 +91,7 @@ set splitright
 
 " linenumber
 set number
-
+set relativenumber
 " search visual
 vnoremap // y/<C-R>"<CR>
 
@@ -153,7 +153,11 @@ nnoremap <leader>O O<ESC>
 " colorscheme
 " colorscheme ron
 
+" enable cursosr highlight
+set cursorline
+
 " Nord theme
+let g:nord_uniform_diff_background = 1
 let g:nord_cursor_line_number_background = 1
 colorscheme nord
 
