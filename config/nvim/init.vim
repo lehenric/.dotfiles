@@ -85,8 +85,6 @@ cmap w!! w !sudo tee > /dev/null %
    \   exe "normal! g`\"" |
    \ endif
 
-"autocmd BufReadPost * if @% !~# '\.git[\/\\]COMMIT_EDITMSG$' && line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif 
-
 " natural spliting
 set splitbelow
 set splitright
@@ -158,5 +156,4 @@ nnoremap <leader>O O<ESC>
 " Nord theme
 let g:nord_cursor_line_number_background = 1
 colorscheme nord
-"let g:airline_theme = 'rigel'
 
