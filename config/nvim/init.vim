@@ -161,3 +161,11 @@ let g:nord_uniform_diff_background = 1
 let g:nord_cursor_line_number_background = 1
 colorscheme nord
 
+" load usr/share/dict/words on markdown
+augroup markdown_completition
+    autocmd!
+    autocmd BufRead,BufNewFile *.md setlocal spell
+    autocmd BufRead,BufNewFile *.md set dictionary+=/usr/share/dict/words
+    autocmd BufRead,BufNewFile *.md set complete+=,kspell
+augroup end
+
