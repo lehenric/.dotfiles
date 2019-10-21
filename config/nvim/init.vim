@@ -31,6 +31,7 @@ if dein#load_state('~/.local/share/dein')
    call dein#add('neoclide/coc.nvim', { 'merger':0, 'rev': 'release' })
    call dein#add('universal-ctags/ctags')
    call dein#add('arcticicestudio/nord-vim')
+   call dein#add('junegunn/goyo.vim')
   " Required:
   call dein#end()
   call dein#save_state()
