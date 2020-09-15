@@ -100,7 +100,7 @@ augroup javascript_folding
     au!
     au FileType javascript setlocal foldmethod=syntax
 augroup END
-set foldlevelstart=2
+set foldlevelstart=9999
 
 "" Macros
 
@@ -122,7 +122,8 @@ nnoremap <Leader>hi :History<CR>
 nmap <leader>x Bx<ESC>Ex<ESC>
 
 "" convert md to pdf from actual file and open it using xdg-open
-nnoremap <leader>md :exec  "! pandoc -o " . expand('%:p:r') . ".html " . expand('%:p') . " && firefox " . expand('%:p:r') . ".html"<CR>
+"" nnoremap <leader>md :exec  "! pandoc -o " . expand('%:p:r') . ".html " . expand('%:p') . " && firefox " . expand('%:p:r') . ".html"<CR>
+nnoremap <leader>md :exec "! pandoc -o /dev/stdout -t html " . expand('%:p') . " \| base64 -w0 <&0 \| read -r x; firefox \"data:text/html;base64,$x\""<CR>
 
 "" prettyfi json
 nnoremap <leader>jq :%!python -m json.tool<CR>
@@ -166,5 +167,9 @@ augroup markdown_completition
     autocmd BufRead,BufNewFile *.md setlocal spell
     autocmd BufRead,BufNewFile *.md set dictionary+=/usr/share/dict/words
     autocmd BufRead,BufNewFile *.md set complete+=,kspell
+    " if in markdown add comment to 'c' register
+    autocmd BufRead,BufNewFile *.md let @c = "I<-- A -->"
 augroup end
 
+"remove trailing spaces
+nnoremap <leader>s /\s\+$<CR>:%s/\s\+$//e
