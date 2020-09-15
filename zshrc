@@ -88,7 +88,7 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch x86_64"
 
 # Set default VISUAL TEXT EDITOR
-export VISUAL=vim
+export VISUAL=nvim
 
 # Conf less to work on directories
 # must have .lessfilter in home dir
