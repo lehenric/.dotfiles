@@ -1,24 +1,37 @@
+/* Move tabs 35% to rihgt */
 #TabsToolbar {
-  direction: rtl;
+/* 	margin-left: 44vw !important; */
+/*   visibility: collapse !important; */
+}
+/*move buttons to the left*/
+.titlebar-buttonbox-container {
+/*   position: absolute; */
+/*   margin-left: -44vw; */
+  margin-right: 60vw
 }
 
-#tabbrowser-tabs {
-  direction: ltr;
+
+/* Move navigation 65% to left and negative margin to move to top line */
+#nav-bar {
+	margin-left: 6em !important;
+	margin-right: 34vw !important;
+	margin-top: -29px !important;
+	background: transparent !important;
+	z-index: 2;
 }
 
-.titlebar-buttonbox {
-  display: flex;
+:root {
+  --tabs-border: transparent !important;
+  /* active tab left & right borders - not working in 58?*/
+  --toolbox-border-bottom-color: transparent !important;
+  /* 1px line under background tabs */
+  --chrome-nav-bar-controls-border-color: transparent !important;
+  /* border around url bar */
 }
 
-.titlebar-min {
-  order: 2;
+/* White GitHub favicon */
+.tabbrowser-tab[image^="data:image/x-icon;base64,AAABAAIAEBAAAAEAIAAoBQAAJgAAACAgAAABACAAKBQAAE4FAAAoAAAAEAAAACAAAAABACAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABERE3YTExPFDg4OEgAAAAAAAAAADw8PERERFLETExNpAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQUFJYTExT8ExMU7QAAABkAAAAAAAAAAAAAABgVFRf/FRUX/xERE4UAAAAAAAAAAAAAAAAAAAAAAAAAABEREsETExTuERERHhAQEBAAAAAAAAAAAAAAAAAAAAANExMU9RUVF/8VFRf/EREUrwAAAAAAAAAAAAAAABQUFJkVFRf/BgYRLA4ODlwPDw/BDw8PIgAAAAAAAAAADw8PNBAQEP8VFRf/FRUX/xUVF/8UFBSPAAAAABAQEDAPDQ//AAAA"] .tab-icon-image {
+  filter: invert(1.0) !important;
 }
 
-.titlebar-max {
-  order: 1;
-}
 
-.titlebar-close {
-  order: 3;
-  margin-right: 6px !important;
-}
