@@ -66,6 +66,9 @@ plugins=(
   alias-tips
   docker
   fd
+  vagrant
+  bgnotify
+  kubectl
 )
 
 source $ZSH/oh-my-zsh.sh
