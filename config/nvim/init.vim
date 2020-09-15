@@ -104,7 +104,7 @@ set foldlevelstart=2
 
 "" Macros
 
-let mapleader=","
+"let mapleader=","
 nmap <leader>q :NERDTreeToggle<CR>
 nmap <leader>h :noh<CR>
 nmap <leader>n :set number!<CR>
