@@ -91,7 +91,6 @@ set splitright
 
 " linenumber
 set number
-set relativenumber
 " search visual
 vnoremap // y/<C-R>"<CR>
 
